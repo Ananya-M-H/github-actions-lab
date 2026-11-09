@@ -1,0 +1,36 @@
+name: Task Manager CI
+
+# When should this workflow execute?
+on:
+  push:
+    branches:
+      - main
+
+  pull_request:
+    branches:
+      - main
+
+# Jobs to execute
+jobs:
+  test:
+    # Machine on which the job runs
+    runs-on: ubuntu-latest
+
+    steps:
+      # Step 1: Download repository code
+      - name: Checkout repository
+        uses: actions/checkout@v4
+
+      # Step 2: Install Node.js
+      - name: Setup Node.js
+        uses: actions/setup-node@v4
+        with:
+          node-version: 22
+
+      # Step 3: Display Node.js version
+      - name: Check Node version
+        run: node --version
+
+      # Step 4: Run automated tests
+      - name: Run tests
+        run: npm test

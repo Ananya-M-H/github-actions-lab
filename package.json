@@ -1,0 +1,16 @@
+{
+  "name": "github-actions-lab",
+  "version": "1.0.0",
+  "description": "A hands-on project to learn GitHub Actions and CI/CD",
+  "main": "src/app.js",
+  "scripts": {
+    "test": "node --test"
+  },
+  "keywords": [
+    "github-actions",
+    "ci-cd",
+    "nodejs"
+  ],
+  "author": "",
+  "license": "MIT"
+}
