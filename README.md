@@ -34,3 +34,8 @@ The workflow is triggered on pushes and pull requests targeting the main branch.
 
 ```bash
 npm test
+## Learning Progress
+
+- GitHub Actions basics
+- Workflow triggers
+- Automated testing
