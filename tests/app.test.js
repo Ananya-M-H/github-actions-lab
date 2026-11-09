@@ -51,3 +51,6 @@ test("Should throw an error when task does not exist", () => {
         }
     );
 });
+test("Intentional failure test", () => {
+    assert.strictEqual(2 + 2, 5);
+});
